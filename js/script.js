@@ -2,9 +2,14 @@
    DADOS — cursos agrupados por área
 ══════════════════════════════════════════ */
 const COURSES = {
-  tecnologia: [
+  Automação: [ //nucleo
+  
+      
+      
+      
+      
     {
-      title:'Técnico em Informática', tag:'Técnico', badge:'🔥 Alta Demanda',
+      title: 'Técnico em Informática', tag:'Técnico', badge:'🔥 Alta Demanda',
       desc:'Desenvolva habilidades em programação, redes e banco de dados.',
       duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 2.500 – R$ 5.000',
@@ -13,7 +18,7 @@ const COURSES = {
       marketQuery:'demanda por técnicos em informática e programação no mercado de trabalho brasileiro 2024 2025'
     },
     {
-      title:'Automação Industrial', tag:'Técnico', badge:'🏆 Destaque',
+      icon:'🤖', title:'Automação Industrial', tag:'Técnico', badge:'🏆 Destaque',
       desc:'Programe CLPs, robôs e sistemas de controle para a Indústria 4.0.',
       duration:'20 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 3.500 – R$ 7.000',
@@ -22,25 +27,25 @@ const COURSES = {
       marketQuery:'mercado de trabalho automação industrial robótica indústria 4.0 brasil vagas 2024 2025'
     },
     {
-      title:'Automação Residencial', tag:'Qualificação', badge:'',
-      desc:'Desenvolver e implementar sistemas e dispositivos de automação e controle de processos industriais',
-      duration:'60 Horas', level:'Básico', modality:'presencial', area:'qualificacao',
+      icon:'🌐', title:'Desenvolvedor Web', tag:'Qualificação', badge:'',
+      desc:'HTML, CSS, JavaScript e React. Construa sites e aplicações modernas.',
+      duration:'6 meses', level:'Básico', modality:'EAD', area:'qualificacao',
       salary:'R$ 3.000 – R$ 8.000',
       detail:'HTML5, CSS3, JavaScript, React e APIs REST.',
       mascotMsg:'Dev Web tem vagas no Brasil todo! Dá pra trabalhar remoto de qualquer lugar! 🌐',
       marketQuery:'vagas desenvolvedor web frontend react javascript brasil 2024 2025 mercado tecnologia'
     },
     {
-      title:'Técnico em refrigeração e climatização', tag:'Qualificação', badge:'',
-      desc:'Elaborar e implementar projetos de instalação de sistemas de refrigeração e climatização.',
-      duration:'1200 Horas', level:'Intermediário', modality:'EAD', area:'Qualificação',
+      icon:'📊', title:'Ciência de Dados', tag:'Aperfeiçoamento', badge:'',
+      desc:'Python, Machine Learning e análise estatística para decisões de negócio.',
+      duration:'8 meses', level:'Intermediário', modality:'EAD', area:'aperfeicoamento',
       salary:'R$ 6.000 – R$ 15.000',
       detail:'Python, Pandas, Machine Learning, Power BI e Visualização de Dados.',
       mascotMsg:'Cientista de dados é uma das profissões mais bem pagas do Brasil! Veja os dados! 📊',
       marketQuery:'cientista de dados data science vagas salários mercado brasil 2024 2025'
     },
     {
-      title:'Segurança da Informação', tag:'Técnico', badge:'',
+      icon:'🔒', title:'Segurança da Informação', tag:'Técnico', badge:'',
       desc:'Proteja redes e sistemas contra ataques cibernéticos.',
       duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 5.000 – R$ 12.000',
@@ -49,7 +54,7 @@ const COURSES = {
       marketQuery:'segurança da informação cybersegurança vagas mercado brasil 2024 2025 demanda profissionais'
     },
     {
-      title:'Cloud Computing', tag:'Aperfeiçoamento', badge:'',
+      icon:'☁️', title:'Cloud Computing', tag:'Aperfeiçoamento', badge:'',
       desc:'AWS, Azure e Google Cloud para ambientes corporativos modernos.',
       duration:'5 meses', level:'Intermediário', modality:'EAD', area:'aperfeicoamento',
       salary:'R$ 7.000 – R$ 18.000',
@@ -58,9 +63,9 @@ const COURSES = {
       marketQuery:'cloud computing AWS Azure vagas mercado brasil 2024 2025 salários profissionais'
     },
   ],
-  industria: [
+  Elétrica: [
     {
-      title:'Mecânica Industrial', tag:'Técnico', badge:'🏆 Clássico',
+      icon:'⚙️', title:'Mecânica Industrial', tag:'Técnico', badge:'🏆 Clássico',
       desc:'Torno mecânico, fresagem e manutenção de máquinas industriais.',
       duration:'20 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 2.800 – R$ 5.500',
@@ -69,7 +74,7 @@ const COURSES = {
       marketQuery:'técnico mecânica industrial vagas mercado brasil 2024 2025 demanda indústria'
     },
     {
-      title:'Eletrotécnica', tag:'Técnico', badge:'🔥 Alta Demanda',
+      icon:'⚡', title:'Eletrotécnica', tag:'Técnico', badge:'🔥 Alta Demanda',
       desc:'Instalações elétricas industriais, painéis e sistemas de proteção.',
       duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 3.000 – R$ 6.000',
@@ -78,7 +83,7 @@ const COURSES = {
       marketQuery:'técnico eletrotécnica eletricista industrial vagas mercado trabalho brasil 2024 2025'
     },
     {
-      title:'Mecatrônica', tag:'Técnico', badge:'',
+      icon:'🔧', title:'Mecatrônica', tag:'Técnico', badge:'',
       desc:'Mecânica, eletrônica e programação. O tripé da Indústria 4.0.',
       duration:'24 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 4.000 – R$ 9.000',
@@ -87,7 +92,7 @@ const COURSES = {
       marketQuery:'mecatrônica técnico indústria vagas mercado trabalho brasil automação 2024 2025'
     },
     {
-      title:'Segurança do Trabalho', tag:'Técnico', badge:'',
+      icon:'🛡️', title:'Segurança do Trabalho', tag:'Técnico', badge:'',
       desc:'Fiscalize normas e previna acidentes no ambiente industrial.',
       duration:'18 meses', level:'Técnico', modality:'Presencial + EAD', area:'tecnico',
       salary:'R$ 2.500 – R$ 5.000',
@@ -96,9 +101,9 @@ const COURSES = {
       marketQuery:'técnico segurança do trabalho vagas mercado brasil NR 2024 2025 demanda'
     },
   ],
-  construcao: [
+  Gestão: [
     {
-      title:'Técnico em Edificações', tag:'Técnico', badge:'🔥 Alta Demanda',
+      icon:'🏗️', title:'Técnico em Edificações', tag:'Técnico', badge:'🔥 Alta Demanda',
       desc:'AutoCAD, BIM, orçamentos e supervisão de obras.',
       duration:'20 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 2.800 – R$ 5.500',
@@ -107,7 +112,7 @@ const COURSES = {
       marketQuery:'técnico edificações construção civil vagas mercado brasil 2024 2025 obras infraestrutura'
     },
     {
-      title:'Marcenaria', tag:'Qualificação', badge:'',
+      icon:'🪵', title:'Marcenaria', tag:'Qualificação', badge:'',
       desc:'Criação de móveis planejados com técnicas tradicionais e modernas.',
       duration:'4 meses', level:'Básico', modality:'Presencial', area:'qualificacao',
       salary:'R$ 2.000 – R$ 5.000',
@@ -116,7 +121,7 @@ const COURSES = {
       marketQuery:'marceneiro marcenaria móveis planejados mercado trabalho brasil vagas 2024 2025'
     },
     {
-      title:'Design de Interiores', tag:'Aperfeiçoamento', badge:'',
+      icon:'🎨', title:'Design de Interiores', tag:'Aperfeiçoamento', badge:'',
       desc:'Projete ambientes residenciais e comerciais com estética e funcionalidade.',
       duration:'8 meses', level:'Intermediário', modality:'Presencial + EAD', area:'aperfeicoamento',
       salary:'R$ 3.000 – R$ 8.000',
@@ -125,7 +130,7 @@ const COURSES = {
       marketQuery:'designer de interiores decoração mercado brasil vagas salários 2024 2025 setor imobiliário'
     },
     {
-      title:'Instalações Elétricas Residenciais', tag:'Qualificação', badge:'',
+      icon:'🔌', title:'Instalações Elétricas Residenciais', tag:'Qualificação', badge:'',
       desc:'Execute instalações elétricas com segurança em residências.',
       duration:'3 meses', level:'Básico', modality:'Presencial', area:'qualificacao',
       salary:'R$ 2.500 – R$ 5.000',
@@ -134,9 +139,9 @@ const COURSES = {
       marketQuery:'eletricista residencial vagas mercado trabalho brasil autônomo 2024 2025'
     },
   ],
-  alimentos: [
+  Metalmecânico: [
     {
-      title:'Técnico em Alimentos', tag:'Técnico', badge:'🏆 Destaque',
+      icon:'🍕', title:'Técnico em Alimentos', tag:'Técnico', badge:'🏆 Destaque',
       desc:'Controle de qualidade, processamento e boas práticas na indústria alimentícia.',
       duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 2.500 – R$ 4.500',
@@ -145,7 +150,7 @@ const COURSES = {
       marketQuery:'técnico em alimentos indústria alimentícia agronegócio vagas mercado brasil 2024 2025'
     },
     {
-      title:'Confeitaria e Panificação', tag:'Qualificação', badge:'',
+      icon:'🍰', title:'Confeitaria e Panificação', tag:'Qualificação', badge:'',
       desc:'Bolos artísticos, pães artesanais e sobremesas com técnicas profissionais.',
       duration:'4 meses', level:'Básico', modality:'Presencial', area:'qualificacao',
       salary:'R$ 1.800 – R$ 6.000',
@@ -154,7 +159,7 @@ const COURSES = {
       marketQuery:'confeitaria panificação artesanal mercado brasil crescimento empreendedorismo 2024 2025'
     },
     {
-      title:'Barismo e Cafeteria', tag:'Qualificação', badge:'',
+      icon:'☕', title:'Barismo e Cafeteria', tag:'Qualificação', badge:'',
       desc:'Espresso, latte art, métodos alternativos e gestão de cafeteria.',
       duration:'2 meses', level:'Básico', modality:'Presencial', area:'qualificacao',
       salary:'R$ 2.000 – R$ 4.000',
@@ -163,9 +168,9 @@ const COURSES = {
       marketQuery:'barista café especial terceira onda mercado brasil vagas crescimento 2024 2025'
     },
   ],
-  saude: [
+  Refrigeração: [
     {
-      title:'Técnico em Enfermagem', tag:'Técnico', badge:'🏆 Mais Procurado',
+      icon:'💉', title:'Técnico em Enfermagem', tag:'Técnico', badge:'🏆 Mais Procurado',
       desc:'Assistência ao paciente, procedimentos técnicos e emergências.',
       duration:'20 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 2.200 – R$ 4.000',
@@ -174,7 +179,7 @@ const COURSES = {
       marketQuery:'técnico enfermagem vagas mercado saúde brasil 2024 2025 demanda hospitais'
     },
     {
-      title:'Técnico em Saúde Bucal', tag:'Técnico', badge:'🔥 Alta Demanda',
+      icon:'🦷', title:'Técnico em Saúde Bucal', tag:'Técnico', badge:'🔥 Alta Demanda',
       desc:'Auxilie cirurgiões-dentistas com biossegurança e instrumentação.',
       duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 1.800 – R$ 3.500',
@@ -183,7 +188,7 @@ const COURSES = {
       marketQuery:'técnico saúde bucal odontologia vagas mercado brasil 2024 2025 planos odontológicos'
     },
     {
-      title:'Personal Trainer', tag:'Qualificação', badge:'',
+      icon:'🏃', title:'Personal Trainer', tag:'Qualificação', badge:'',
       desc:'Prescrição de exercícios, avaliação física e treinamento personalizado.',
       duration:'4 meses', level:'Básico', modality:'Presencial + EAD', area:'qualificacao',
       salary:'R$ 3.000 – R$ 10.000',
@@ -192,9 +197,9 @@ const COURSES = {
       marketQuery:'personal trainer academia wellness mercado trabalho brasil vagas 2024 2025'
     },
   ],
-  gestao: [
+  TI: [
     {
-      title:'Técnico em Administração', tag:'Técnico', badge:'🔥 Alta Demanda',
+      icon:'📈', title:'Técnico em Administração', tag:'Técnico', badge:'🔥 Alta Demanda',
       desc:'Gestão empresarial, finanças, RH e processos administrativos.',
       duration:'18 meses', level:'Técnico', modality:'Presencial + EAD', area:'tecnico',
       salary:'R$ 2.000 – R$ 4.500',
@@ -203,7 +208,7 @@ const COURSES = {
       marketQuery:'técnico administração empresas vagas mercado brasil 2024 2025 gestão'
     },
     {
-      title:'Logística', tag:'Técnico', badge:'',
+      icon:'📦', title:'Logística', tag:'Técnico', badge:'',
       desc:'Cadeia de suprimentos, armazenagem, transporte e controle de estoque.',
       duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
       salary:'R$ 2.500 – R$ 5.000',
@@ -212,7 +217,7 @@ const COURSES = {
       marketQuery:'logística supply chain e-commerce vagas mercado brasil 2024 2025 crescimento'
     },
     {
-      title:'Marketing Digital', tag:'Aperfeiçoamento', badge:'',
+      icon:'🎯', title:'Marketing Digital', tag:'Aperfeiçoamento', badge:'',
       desc:'SEO, redes sociais, Google Ads e estratégias de marketing online.',
       duration:'4 meses', level:'Básico', modality:'EAD', area:'aperfeicoamento',
       salary:'R$ 2.800 – R$ 7.000',
@@ -221,7 +226,7 @@ const COURSES = {
       marketQuery:'marketing digital redes sociais vagas mercado brasil 2024 2025 profissionais demanda'
     },
     {
-      title:'Finanças e Contabilidade', tag:'Qualificação', badge:'',
+      icon:'💰', title:'Finanças e Contabilidade', tag:'Qualificação', badge:'',
       desc:'Fluxo de caixa, DRE, análise de balanços e planejamento financeiro.',
       duration:'5 meses', level:'Básico', modality:'EAD', area:'qualificacao',
       salary:'R$ 2.200 – R$ 5.000',
@@ -230,46 +235,46 @@ const COURSES = {
       marketQuery:'assistente financeiro contabilidade vagas mercado brasil 2024 2025'
     },
   ],
-  moda: [
-    {
-      title:'Técnico em Vestuário', tag:'Técnico', badge:'🏆 Destaque',
-      desc:'Modelagem, costura industrial e gestão de produção têxtil.',
-      duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
-      salary:'R$ 2.000 – R$ 4.500',
-      detail:'Modelagem, Costura Industrial, Pilotagem e Gestão de Produção.',
-      mascotMsg:'O setor têxtil brasileiro é um dos maiores do mundo! Muito mercado para técnicos! ✂️',
-      marketQuery:'técnico vestuário têxtil moda indústria vagas mercado brasil 2024 2025'
-    },
-    {
-      title:'Design de Moda', tag:'Aperfeiçoamento', badge:'',
-      desc:'Criação de coleções, pesquisa de tendências e identidade de marca.',
-      duration:'8 meses', level:'Intermediário', modality:'Presencial', area:'aperfeicoamento',
-      salary:'R$ 3.000 – R$ 8.000',
-      detail:'Desenho de Moda, Illustrator, Tendências, Coleções e Branding.',
-      mascotMsg:'Design de Moda é criatividade com mercado real! Muitos criam suas próprias marcas! 👜',
-      marketQuery:'designer de moda mercado trabalho brasil vagas tendências 2024 2025'
-    },
-    {
-      title:'Costura Criativa', tag:'Qualificação', badge:'',
-      desc:'Costura do básico ao avançado, customizações e peças exclusivas.',
-      duration:'3 meses', level:'Básico', modality:'Presencial', area:'qualificacao',
-      salary:'R$ 1.500 – R$ 5.000',
-      detail:'Costura Manual, Máquina, Overloque e Customização Têxtil.',
-      mascotMsg:'Costura criativa nunca sai de moda! Muitos viram empreendedores de sucesso com ela! 🧵',
-      marketQuery:'costura criativa customização roupas mercado empreendedorismo brasil 2024 2025'
-    },
-  ],
+  // moda: [
+  //   {
+  //     icon:'✂️', title:'Técnico em Vestuário', tag:'Técnico', badge:'🏆 Destaque',
+  //     desc:'Modelagem, costura industrial e gestão de produção têxtil.',
+  //     duration:'18 meses', level:'Técnico', modality:'Presencial', area:'tecnico',
+  //     salary:'R$ 2.000 – R$ 4.500',
+  //     detail:'Modelagem, Costura Industrial, Pilotagem e Gestão de Produção.',
+  //     mascotMsg:'O setor têxtil brasileiro é um dos maiores do mundo! Muito mercado para técnicos! ✂️',
+  //     marketQuery:'técnico vestuário têxtil moda indústria vagas mercado brasil 2024 2025'
+  //   },
+  //   {
+  //     icon:'👜', title:'Design de Moda', tag:'Aperfeiçoamento', badge:'',
+  //     desc:'Criação de coleções, pesquisa de tendências e identidade de marca.',
+  //     duration:'8 meses', level:'Intermediário', modality:'Presencial', area:'aperfeicoamento',
+  //     salary:'R$ 3.000 – R$ 8.000',
+  //     detail:'Desenho de Moda, Illustrator, Tendências, Coleções e Branding.',
+  //     mascotMsg:'Design de Moda é criatividade com mercado real! Muitos criam suas próprias marcas! 👜',
+  //     marketQuery:'designer de moda mercado trabalho brasil vagas tendências 2024 2025'
+  //   },
+  //   {
+  //     icon:'🧵', title:'Costura Criativa', tag:'Qualificação', badge:'',
+  //     desc:'Costura do básico ao avançado, customizações e peças exclusivas.',
+  //     duration:'3 meses', level:'Básico', modality:'Presencial', area:'qualificacao',
+  //     salary:'R$ 1.500 – R$ 5.000',
+  //     detail:'Costura Manual, Máquina, Overloque e Customização Têxtil.',
+  //     mascotMsg:'Costura criativa nunca sai de moda! Muitos viram empreendedores de sucesso com ela! 🧵',
+  //     marketQuery:'costura criativa customização roupas mercado empreendedorismo brasil 2024 2025'
+  //   },
+  // ],
 };
 
 /* Mensagens do mascote por área */
 const TAB_MESSAGES = {
-  tecnologia: 'Tecnologia é a área que mais cresce! Salários altos e vagas em abundância. Escolha um curso! 💻',
-  industria:  'Indústria é o coração do SENAI! Você aprende na prática nas melhores fábricas. Explore! ⚙️',
-  construcao: 'Construção Civil em pleno crescimento! Muitas obras, muitas oportunidades. Veja os cursos! 🏗️',
-  alimentos:  'Alimentos é uma das maiores indústrias do Brasil! Muito mercado por aqui. Explore! 🍕',
-  saude:      'Saúde é carreira nobre e estável! Sempre haverá necessidade de profissionais capacitados! 💊',
-  gestao:     'Gestão está em todo lugar! Todo negócio precisa de quem sabe administrar! 📊',
-  moda:       'Moda une arte e mercado! O Brasil tem uma das maiores indústrias têxteis do mundo! 👗',
+  Automação: 'Mensagem indefinida',//'Tecnologia é a área que mais cresce! Salários altos e vagas em abundância. Escolha um curso! 💻', 
+  Elétrica: 'Mensagem indefinida', //'Indústria é o coração do SENAI! Você aprende na prática nas melhores fábricas. Explore! ⚙️',
+  Gestão: 'Mensagem indefinida',//'Construção Civil em pleno crescimento! Muitas obras, muitas oportunidades. Veja os cursos! 🏗️',
+  Metalmecânico: 'Mensagem indefinida',//'Alimentos é uma das maiores indústrias do Brasil! Muito mercado por aqui. Explore! 🍕',
+  Refrigeração: 'Mensagem indefinida', // 'Saúde é carreira nobre e estável! Sempre haverá necessidade de profissionais capacitados! 💊',
+  TI: 'Mensagem indefinida', // 'Gestão está em todo lugar! Todo negócio precisa de quem sabe administrar! 📊',
+  // moda:       'Moda une arte e mercado! O Brasil tem uma das maiores indústrias têxteis do mundo! 👗',
 };
 
 /* Lista plana de todos os cursos para a busca */
